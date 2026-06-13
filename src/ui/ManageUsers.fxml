@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="15"
+      xmlns="http://javafx.com/javafx/25"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ui.ManageUsersController"
+      style="-fx-padding:20;"
+>
+
+    <Label text="Manage Users"
+           style="-fx-font-size:24px; -fx-font-weight:bold;"/>
+
+    <TableView fx:id="userTable" prefHeight="450">
+
+        <columns>
+            <TableColumn fx:id="idCol" text="ID" prefWidth="80"/>
+            <TableColumn fx:id="nameCol" text="Username" prefWidth="180"/>
+            <TableColumn fx:id="emailCol" text="Email" prefWidth="220"/>
+            <TableColumn fx:id="deptCol" text="Department" prefWidth="150"/>
+        </columns>
+
+    </TableView>
+
+    <HBox spacing="10">
+        <Button text="Delete User"
+        onAction="#deleteUser"
+        styleClass="danger-button"/>
+
+<Button text="Refresh"
+        onAction="#loadUsers"
+        styleClass="login-button"/>
+    </HBox>
+
+</VBox>

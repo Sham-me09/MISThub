@@ -1,0 +1,197 @@
+/* Root background */
+.dashboard-root {
+    -fx-background-color: linear-gradient(
+        to bottom right,
+        #0f2027,
+        #203a43,
+        #2c5364
+    );
+}
+
+/* Top bar */
+.top-bar {
+    -fx-padding: 14 20;
+    -fx-background-color: rgba(0,0,0,0.4);
+}
+
+/* Logout button */
+.logout-btn {
+    -fx-background-color: #6b7280;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+}
+
+.logout-btn:hover {
+    -fx-background-color: #fff9c4;
+    -fx-text-fill: black;
+}
+
+/* Sidebar */
+.sidebar {
+    -fx-background-color: rgba(0,0,0,0.35);
+    -fx-padding: 20;
+}
+
+.sidebar-button {
+    -fx-text-fill: #bcd;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-padding: 8 12;
+    -fx-background-color: rgba(255,255,255,0.08);
+}
+
+.sidebar-button:hover {
+    -fx-background-color: rgba(255,255,255,0.15);
+    -fx-text-fill: #ffffce;
+}
+
+/* Content area */
+.content-area {
+    -fx-padding: 40;
+}
+
+/* Card */
+.card {
+    -fx-background-color: rgba(255,255,255,0.08);
+    -fx-background-radius: 20;
+    -fx-padding: 20;
+
+    -fx-border-color: rgba(255,255,255,0.2);
+    -fx-border-radius: 20;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 25, 0.2, 0, 10);
+}
+
+/* Card title */
+.card-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #069999;   /* same as your theme */
+}
+
+.label {
+    -fx-text-fill: #ffffce;
+}
+
+.combo-box, .text-field {
+    -fx-background-radius: 8;
+}
+
+.card:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.18), 18, 0, 0, 6);
+}
+
+.scroll-pane {
+    -fx-background: transparent;
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+
+.login-button {
+    -fx-background-color: #6b7280;
+    -fx-text-fill: white;
+    -fx-background-radius: 12;
+    -fx-font-weight: bold;
+}
+
+.login-button:hover {
+    -fx-background-color: #fff9c4;
+    -fx-text-fill: black;
+}
+
+
+/* ===== GLASS INPUTS ===== */
+.text-field {
+    -fx-background-color: rgba(255,255,255,0.08);
+    -fx-border-color: rgba(255,255,255,0.4);
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #ffffce;
+}
+
+/* ComboBox Glass */
+.combo-box {
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: rgba(255,255,255,0.4);
+    -fx-background-color: rgba(255,255,255,0.08);
+}
+
+/* Selected text */
+.combo-box .list-cell {
+    -fx-text-fill: white;
+}
+
+/* Prompt text */
+.combo-box .prompt-text {
+    -fx-text-fill: #ffffce;
+}
+
+/* Dropdown */
+.combo-box-popup .list-view {
+    -fx-background-color: #203a43;
+}
+
+.combo-box-popup .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #069999;
+    -fx-text-fill: black;
+}
+
+/* Arrow */
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.combo-box .arrow {
+    -fx-background-color: white;
+}
+
+/* ===== GLASS DIALOG ===== */
+.custom-dialog {
+    -fx-background-color: rgba(15,32,39,0.95);
+}
+
+/* Dialog text */
+.custom-dialog .label {
+    -fx-text-fill: #ffffce;
+}
+
+/* Dialog buttons */
+.custom-dialog .button {
+    -fx-background-color: #6b7280;
+    -fx-text-fill: white;
+}
+
+.custom-dialog .button:hover {
+    -fx-background-color: #fff9c4;
+    -fx-text-fill: black;
+}
+
+
+.text-area {
+    -fx-background-color: rgba(255,255,255,0.08);
+    -fx-background-radius: 10;
+    -fx-border-color: rgba(255,255,255,0.3);
+    -fx-border-radius: 10;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #ffffce;
+}
+
+.text-area .content {
+    -fx-background-color: transparent; /* removes inner white */
+}

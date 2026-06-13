@@ -1,0 +1,17 @@
+.alumni-card {
+    -fx-background-color: rgba(255,255,255,0.08);
+    -fx-background-radius: 20;
+    -fx-padding: 15;
+
+    -fx-border-color: rgba(255,255,255,0.2);
+    -fx-border-radius: 20;
+}
+
+.alumni-card .label {
+    -fx-text-fill: #ffffce;
+}
+
+.card:hover {
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}

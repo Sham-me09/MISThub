@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<ScrollPane fitToWidth="true"
+            vbarPolicy="AS_NEEDED"
+            hbarPolicy="NEVER"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ui.AdminAlumniController">
+
+    <VBox spacing="15" styleClass="content-area" fillWidth="true">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+        <Label text="Alumni Management"
+               style="-fx-font-size:24; -fx-font-weight:bold;"/>
+
+        <!-- ===== FORM ===== -->
+        <TextField fx:id="nameField" promptText="Name"/>
+        <TextField fx:id="educationField" promptText="Education"/>
+        <TextField fx:id="positionField" promptText="Current Position"/>
+        <TextField fx:id="researchField" promptText="Research Area"/>
+        <TextField fx:id="emailField" promptText="Email"/>
+        <TextField fx:id="jobsField" promptText="Previous Jobs"/>
+        <TextArea fx:id="summaryField"
+          promptText="Summary"
+          prefRowCount="3"
+          wrapText="true"/>
+
+        <TextField fx:id="imagePathField"
+                   promptText="Image Path (e.g. /images/alumni/a.jpg)"/>
+
+        <Button text="Add Alumni"
+                onAction="#handleAddAlumni"
+                styleClass="login-button"/>
+
+        <Separator/>
+
+        <!-- ===== LIST ===== -->
+        <VBox fx:id="alumniBox" spacing="10"/>
+
+    </VBox>
+
+</ScrollPane>

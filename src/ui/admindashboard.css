@@ -1,0 +1,13 @@
+.stat-card {
+    -fx-background-color: white;
+    -fx-padding: 25;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1),10,0,0,3);
+    -fx-alignment: center;
+    -fx-pref-width: 180;
+}
+
+.stat-number {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+}

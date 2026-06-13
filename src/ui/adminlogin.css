@@ -1,0 +1,78 @@
+/* ===== Background (match welcome tone) ===== */
+.login-root {
+    -fx-background-color: linear-gradient(
+        to bottom right,
+        #2b0f0f,
+        #4a1c1c,
+        #6e2c2c
+    );
+}
+
+/* ===== Glass Card ===== */
+.login-card {
+     -fx-background-color: rgba(255,255,255,0.06);
+    -fx-border-color: rgba(255,255,255,0.2);
+    -fx-background-radius: 22;
+    -fx-padding: 35;
+    -fx-border-radius: 22;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 30, 0.2, 0, 15);
+}
+
+/* ===== Title ===== */
+.login-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ff6b6b; /* same as welcome */
+}
+
+/* ===== Input Fields ===== */
+.text-field,
+.password-field {
+    -fx-background-color: rgba(255,255,255,0.08);
+    -fx-border-color: rgba(255,255,255,0.25);
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: transparent;
+
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #cccccc;
+
+    -fx-padding: 12;
+}
+
+/* Focus effect */
+.text-field:focused,
+.password-field:focused {
+    -fx-border-color: #ff6b6b;
+    -fx-background-color: rgba(255,255,255,0.12);
+}
+
+/* ===== Login Button (match welcome button style) ===== */
+.login-button {
+    -fx-background-color: #8b1e1e;
+    -fx-text-fill: white;
+    -fx-background-radius: 20;
+     -fx-font-size: 14px;
+    -fx-font-weight: bold;
+     -fx-padding: 10 0 10 0;
+}
+
+/* Hover */
+.login-button:hover {
+    -fx-background-color: #ff6b6b;
+    -fx-text-fill: black;
+}
+
+/* ===== Back Button ===== */
+.back-button {
+    -fx-background-color: transparent;
+    -fx-font-size: 20px;
+    
+    -fx-text-fill: #ff6b6b;
+
+}
+
+
+
+

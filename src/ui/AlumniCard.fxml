@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<AnchorPane id="AnchorPane" fx:controller="ui.AlumniCardController" prefWidth="600.0" maxWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@alumnicard.css">
+    <VBox spacing="10"
+      alignment="TOP_CENTER"
+      prefWidth="600"
+      prefHeight="400"
+      styleClass="alumni-card">
+    <ImageView fx:id="alumniImage" fitWidth="120" fitHeight="120"/>
+    <Label fx:id="nameLabel"/>
+    <Label fx:id="educationLabel" wrapText="true"/>
+    <Label fx:id="positionLabel" wrapText="true"/>
+    <Label fx:id="emailLabel" wrapText="true"/>
+    <Label fx:id="researchLabel" wrapText="true"/>
+    <Label fx:id="jobsLabel" wrapText="true"/>
+    <Label fx:id="summaryLabel" wrapText="true"/>
+    
+</VBox>
+</AnchorPane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+
+<BorderPane prefHeight="600" prefWidth="900"
+            stylesheets="@admin.css"
+            xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ui.AdminDashboardController">
+
+    <!-- ===== TOP BAR ===== -->
+    <top>
+        <HBox alignment="CENTER_RIGHT" spacing="20" styleClass="top-bar">
+            <Label text="Admin Dashboard" styleClass="top-title"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Button text="Logout"
+                    onAction="#handleLogout"
+                    styleClass="logout-btn">
+                <cursor>
+                    <Cursor fx:constant="HAND"/>
+                </cursor>
+            </Button>
+            <padding>
+                <Insets top="15" right="25" bottom="15" left="25"/>
+            </padding>
+        </HBox>
+    </top>
+
+    <!-- ===== SIDEBAR ===== -->
+    <!-- ===== SIDEBAR ===== -->
+<left>
+    <VBox spacing="15" styleClass="sidebar">
+
+        <Button text="Dashboard"
+                fx:id="dashboardBtn"
+                onAction="#showDashboard"
+                styleClass="side-btn"/>
+
+        <Button text="Manage Users"
+                onAction="#showUsers"
+                styleClass="side-btn"/>
+
+        <Button text="Study Materials"
+        styleClass="side-btn"
+        onAction="#showAdminMaterials"/>
+
+        <Button text="Projects"
+                onAction="#showProjects"
+                styleClass="side-btn"/>
+
+        <Button text="Research Collaboration"
+                onAction="#showResearch"
+                styleClass="side-btn"/>
+
+        <Button text="Alumni Corner"
+                onAction="#showAlumni"
+                styleClass="side-btn"/>
+
+    </VBox>
+</left>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <center>
+        <StackPane fx:id="contentArea" styleClass="content-area">
+           <Label fx:id="welcomeLabel"
+       text="Welcome 👋"
+       styleClass="welcome-text"/>
+        </StackPane>
+    </center>
+
+</BorderPane>

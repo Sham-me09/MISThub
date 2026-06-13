@@ -1,0 +1,84 @@
+/* ===== Background (match welcome tone) ===== */
+.login-root {
+    -fx-background-color: linear-gradient(
+        to bottom right,
+        #0f2027,
+        #203a43,
+        #2c5364
+    );
+}
+
+/* ===== Glass Card ===== */
+.login-card {
+    -fx-background-color: rgba(255,255,255,0.08);
+    -fx-background-radius: 22;
+    -fx-padding: 35;
+
+    -fx-border-color: rgba(255,255,255,0.25);
+    -fx-border-radius: 22;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 30, 0.2, 0, 15);
+}
+
+/* ===== Title ===== */
+.login-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffce; /* same as welcome */
+}
+
+/* ===== Input Fields ===== */
+.text-field,
+.password-field {
+    -fx-background-color: rgba(255,255,255,0.15);
+    -fx-background-radius: 12;
+    -fx-border-radius: 12;
+    -fx-border-color: transparent;
+
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #cccccc;
+
+    -fx-padding: 12;
+}
+
+/* Focus effect */
+.text-field:focused,
+.password-field:focused {
+    -fx-border-color: #069999;
+    -fx-background-color: rgba(255,255,255,0.2);
+}
+
+/* ===== Login Button (match welcome button style) ===== */
+.login-button {
+    -fx-background-color: #6b7280; /* gray */
+    -fx-text-fill: white;
+    -fx-background-radius: 20;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 0 10 0;
+}
+
+/* Hover */
+.login-button:hover {
+    -fx-background-color: #fff9c4; /* soft yellow */
+    -fx-text-fill: black;
+}
+
+/* ===== Back Button ===== */
+.back-button {
+    -fx-background-color: transparent;
+    -fx-font-size: 20px;
+    -fx-text-fill: #ffffce;
+}
+
+/* ===== Register Link ===== */
+.link-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffce; /* match slogan */
+}
+
+.link-button:hover {
+    -fx-underline: true;
+    -fx-text-fill: #ffffff;
+}
+

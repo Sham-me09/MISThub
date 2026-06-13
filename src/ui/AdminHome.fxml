@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<VBox spacing="25" alignment="TOP_CENTER" style="-fx-padding: 40 40 20 40" xmlns:fx="http://javafx.com/fxml" fx:controller="ui.AdminHomeController">
+
+    <Label text="System Overview"
+           style="-fx-font-size:28; -fx-font-weight:bold;"/>
+
+    <HBox spacing="60" alignment="CENTER">
+
+        
+        <VBox styleClass="stat-card">
+    <Label text="Users"/>
+    <Label fx:id="usersCount" styleClass="stat-number"/>
+</VBox>
+
+<VBox styleClass="stat-card">
+    <Label text="Study Materials"/>
+    <Label fx:id="materialsCount" styleClass="stat-number"/>
+</VBox>
+
+<VBox styleClass="stat-card">
+    <Label text="Projects"/>
+    <Label fx:id="projectsCount" styleClass="stat-number"/>
+</VBox>
+
+<VBox styleClass="stat-card">
+    <Label text="Research Posts" style= "-fx-size:24px;"/>
+    <Label fx:id="researchCount" styleClass="stat-number"/>
+</VBox>
+
+    </HBox>
+
+</VBox>

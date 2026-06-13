@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="register-root" stylesheets="@register.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.RegisterController">
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="380.0" spacing="3.55" styleClass="register-card" StackPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Image/icon-removebg-preview.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label style="-fx-font-weight: bold;" styleClass="register-title" text="Create Account">
+                      <VBox.margin>
+      <Insets bottom="3"/>
+   </VBox.margin>
+                     <font>
+                        <Font size="24.0" />
+                       </font>
+                  </Label>
+                  <TextField fx:id="usernameField" maxWidth="-Infinity" prefWidth="260.0" promptText="Username" styleClass="text-field" />
+                  <Label fx:id="usernameError" styleClass="error-label" text="&quot;&quot;" visible="false" />
+                  <TextField fx:id="emailField" maxWidth="-Infinity" prefWidth="260.0" promptText="Email" styleClass="text-field" />
+                  <Label fx:id="emailError" styleClass="error-label" text="&quot;&quot;" visible="false" />
+                  <TextField fx:id="studentIdField" maxWidth="-Infinity" prefWidth="260.0" promptText="Student ID" styleClass="text-field" />
+                  <Label fx:id="studentIdError" styleClass="error-label" text="&quot;&quot;" visible="false" />
+                  <ComboBox fx:id="deptCombo" maxWidth="-Infinity" prefWidth="260.0" promptText="Select Department" styleClass="combo-box" />
+                  <Label fx:id="deptError" styleClass="error-label" text="&quot;&quot;" visible="false" />
+                  <PasswordField fx:id="passwordField" maxWidth="-Infinity" prefWidth="260.0" promptText="Password" styleClass="password-field" />
+                  <Label fx:id="passwordError" styleClass="error-label" text="&quot;&quot;" visible="false" />
+                  <PasswordField fx:id="confirmPasswordField" maxWidth="-Infinity" prefWidth="260.0" promptText="Confirm Password" styleClass="password-field" />
+                  <Label fx:id="confirmPasswordError" styleClass="error-label" text="&quot;&quot;" visible="false" />
+                  <Button fx:id="registerBtn" alignment="CENTER" contentDisplay="CENTER" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleRegister" prefWidth="90.0" styleClass="primary-button" text="Register">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label onMouseClicked="#goToLogin"  styleClass="login-link" text="Already have an account? Log in" underline="true" wrapText="true">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+      <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#goBack" prefHeight="40.0" prefWidth="40.0" styleClass="back-button" text="←" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

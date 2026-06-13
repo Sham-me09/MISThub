@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<VBox spacing="15" xmlns:fx="http://javafx.com/fxml" fx:controller="ui.StudyMaterialsAdminController"> 
+    <padding> 
+        <Insets top="25" right="20" bottom="20" left="20"/> 
+    </padding> 
+    <Label text="Manage Study Materials" styleClass="page-title"/> 
+    <VBox fx:id="materialsBox" spacing="10"/> 
+</VBox>

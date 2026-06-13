@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<ScrollPane fitToWidth="true"
+            vbarPolicy="AS_NEEDED"
+            hbarPolicy="NEVER"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ui.AdminProjectsController">
+
+    <VBox spacing="15"
+          styleClass="content-area"
+    fillWidth="true">
+
+        <padding>
+            <Insets top="20" right="20" bottom="20" left="20"/>
+        </padding>
+
+        <Label text="Manage Projects"
+               style="-fx-font-size:24; -fx-font-weight:bold;"/>
+
+        <VBox fx:id="projectsBox" spacing="10"/>
+
+    </VBox>
+
+</ScrollPane>
