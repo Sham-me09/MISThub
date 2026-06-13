@@ -1,5 +1,3 @@
-# MISThub
-MISTHub is a JavaFX-based academic collaboration platform for MIST students, faculty, and alumni, providing study material sharing, project collaboration, research networking, and alumni engagement in a unified digital ecosystem.
 # MISTHub
 
 MISTHub is a university-focused collaboration platform developed for the Military Institute of Science and Technology (MIST). The platform aims to create a centralized digital ecosystem where students, faculty members, and alumni can connect, collaborate, and share academic resources.
@@ -61,4 +59,13 @@ MISTHub is a university-focused collaboration platform developed for the Militar
 ## Vision
 
 MISTHub aims to become the primary academic and professional networking platform for the MIST community by fostering collaboration, knowledge sharing, innovation, and lifelong connections among students, faculty, and alumni.
+
+## Acknowledgement
+
+Developed collaboratively by **Mhamuda Shafiq Shamme**, **Mabsurah Ferdous**, and **Momotaz Jahan Momo**.
+
+
+
+
+
 
